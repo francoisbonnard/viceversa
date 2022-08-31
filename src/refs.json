@@ -1,0 +1,529 @@
+{
+    "images": [
+        {
+            "name": "1020.jpg",
+            "palette": [
+                "#b43f45",
+                "#1c2c6c",
+                "#e5c8c0",
+                "#ab6257",
+                "#313449",
+                "#b1b5c1"
+            ],
+            "tags": [0,3],
+            "prompt": "retro 1980 computer tech character"
+        },
+        {
+            "name": "1038.jpg",
+            "palette": [
+                "#af402b",
+                "#400414",
+                "#e8ccb9",
+                "#ac6d62",
+                "#502c30",
+                "#d6bfb4"
+            ],
+            "tags": [1,2],
+            "prompt": "retro 1980 vehicle sci-fi character"
+        },
+        {
+            "name": "1126.jpg",
+            "palette": [
+                "#f43a38",
+                "#611d10",
+                "#fc4440",
+                "#b1615c",
+                "#5c3532",
+                "#acc1d2"
+            ],
+            "tags": [0,1,3],
+            "prompt": "retro vehicle surf crocodile 1980"
+        },
+        {
+            "name": "1212.jpg",
+            "palette": [
+                "#be3c25",
+                "#6c120c",
+                "#f0b099",
+                "#9d6c5b",
+                "#6a3c36",
+                "#d0bdb8"
+            ],
+            "tags": [0,2],
+            "prompt": "sci-fi landscape neon planet"
+        },
+        {
+            "name": "1215.jpg",
+            "palette": [
+                "#34adea",
+                "#13456a",
+                "#7edaf5",
+                "#a56d5b",
+                "#364e5b",
+                "#a8bac8"
+            ],
+            "tags": [1,3],
+            "prompt": "sci-fi landscape neon planet character ship"
+        },
+        {
+            "name": "1292.jpg",
+            "palette": [
+                "#dc7344",
+                "#6c2d1b",
+                "#8db6ed",
+                "#5484b4",
+                "#1c2434",
+                "#cfb0ae"
+            ],
+            "tags": [1,2],
+            "prompt": ""
+        },
+        {
+            "name": "1297.jpg",
+            "palette": [
+                "#ec5427",
+                "#52110b",
+                "#f8d38d",
+                "#a85c5c",
+                "#52372b",
+                "#ad9494"
+            ],
+            "tags": [1,3],
+            "prompt": "character absurd hollywood fire"
+        },
+        {
+            "name": "1518.jpg",
+            "palette": [
+                "#808080",
+                "#424242",
+                "#bdbdbd",
+                "#767676",
+                "#3c3c3c",
+                "#bcbcbc"
+            ],
+            "tags": [0,3],
+            "prompt": "abstract light pattern at night with character"
+        },
+        {
+            "name": "1563.jpg",
+            "palette": [
+                "#2c9cef",
+                "#09497e",
+                "#51eafa",
+                "#52839d",
+                "#2e4559",
+                "#8cb4a4"
+            ],
+            "tags": [0,1],
+            "prompt": "fantasy house at night"
+        },
+        {
+            "name": "1570.jpg",
+            "palette": [
+                "#c22b32",
+                "#176a7e",
+                "#e7bc9e",
+                "#b27d5a",
+                "#313847",
+                "#d0bea9"
+            ],
+            "tags": [0,2],
+            "prompt": "absurd library realistic photography"
+        },
+        {
+            "name": "1611.jpg",
+            "palette": [
+                "#2ce4ab",
+                "#097c5f",
+                "#dc6c97",
+                "#ac4c7a",
+                "#2f3f57",
+                "#a2c2d4"
+            ],
+            "tags": [1,3],
+            "prompt": "abstract fractal pattern"
+        },
+        {
+            "name": "1662.jpg",
+            "palette": [
+                "#e35e1c",
+                "#72220a",
+                "#85daf7",
+                "#54949a",
+                "#53342e",
+                "#83b4c4"
+            ],
+            "tags": [0,1],
+            "prompt": "painting of characters at night with fire"
+        },
+        {
+            "name": "1663.jpg",
+            "palette": [
+                "#955833",
+                "#742404",
+                "#ddb59c",
+                "#917365",
+                "#4e382d",
+                "#b69d8f"
+            ],
+            "tags": [1,3],
+            "prompt": "women character in front of haunted house at nigth book cover"
+        },
+        {
+            "name": "1664.jpg",
+            "palette": [
+                "#c72d36",
+                "#6a301a",
+                "#a6bfd6",
+                "#9c805f",
+                "#4e4036",
+                "#c1c4ad"
+            ],
+            "tags": [0,2],
+            "prompt": "character portrait painting cover"
+        },
+        {
+            "name": "1678.jpg",
+            "palette": [
+                "#157aea",
+                "#04172c",
+                "#d8ebf0",
+                "#607f8d",
+                "#324758",
+                "#b0c0bd"
+            ],
+            "tags": [0],
+            "prompt": "surreal tree on sand desert at night"
+        },
+        {
+            "name": "167.jpg",
+            "palette": [
+                "#d27526",
+                "#8c102a",
+                "#fcc866",
+                "#a34e57",
+                "#552c49",
+                "#ccc49c"
+            ],
+            "tags": [0,2],
+            "prompt": "surreal portrait painting of men character sliced"
+        },
+        {
+            "name": "1696.jpg",
+            "palette": [
+                "#d3543f",
+                "#0a8399",
+                "#d99374",
+                "#8d615f",
+                "#384a5b",
+                "#cac1b0"
+            ],
+            "tags": [1,2],
+            "prompt": "pastel calfifornia road realistic photography"
+        },
+        {
+            "name": "1705.jpg",
+            "palette": [
+                "#c55335",
+                "#79290e",
+                "#fccc9c",
+                "#997161",
+                "#473731",
+                "#cdaa9a"
+            ],
+            "tags": [0,3],
+            "prompt": ""
+        },
+        {
+            "name": "1782.jpg",
+            "palette": [
+                "#d8a131",
+                "#784d23",
+                "#e4a35c",
+                "#b06362",
+                "#5b3a33",
+                "#d3c5b3"
+            ],
+            "tags": [1,2],
+            "prompt": "interior flower pattern furniture 1980"
+        },
+        {
+            "name": "1786.jpg",
+            "palette": [
+                "#c17c40",
+                "#643204",
+                "#f6c27c",
+                "#a68559",
+                "#66432f",
+                "#dcd4b4"
+            ],
+            "tags": [1,2],
+            "prompt": "surreal absurd painting with many characters"
+        },
+        {
+            "name": "1823.jpg",
+            "palette": [
+                "#d92626",
+                "#170404",
+                "#eb8e8e",
+                "#94846d",
+                "#543c2d",
+                "#c4c4b4"
+            ],
+            "tags": [0],
+            "prompt": "brutalism architecture 1980 minimalism realistic photography"
+        },
+        {
+            "name": "1867.jpg",
+            "palette": [
+                "#7c6434",
+                "#04241a",
+                "#e4d5c1",
+                "#967a54",
+                "#384640",
+                "#d7c4b2"
+            ],
+            "tags": [0,1,3],
+            "prompt": "realistic photography of vehicle behind fence"
+        },
+        {
+            "name": "1915.jpg",
+            "palette": [
+                "#d8af39",
+                "#5f3f0f",
+                "#f6e8d1",
+                "#5b8087",
+                "#265154",
+                "#cdbf9d"
+            ],
+            "tags": [1,2],
+            "prompt": "surreal painting"
+        },
+        {
+            "name": "1922.jpg",
+            "palette": [
+                "#b1823f",
+                "#7d3219",
+                "#dcc29d",
+                "#877568",
+                "#433831",
+                "#b4babb"
+            ],
+            "tags": [0,2],
+            "prompt": "realistic photography of two characters tattoning each other"
+        },
+        {
+            "name": "1926.jpg",
+            "palette": [
+                "#f52344",
+                "#840629",
+                "#f5b461",
+                "#874d5e",
+                "#5a2729",
+                "#e6d3d0"
+            ],
+            "tags": [1,3],
+            "prompt": "neon night landscape with a vehicle, realistic photography"
+        },
+        {
+            "name": "1944.jpg",
+            "palette": [
+                "#c36536",
+                "#1a6a77",
+                "#edb691",
+                "#b66a5a",
+                "#532a2a",
+                "#cdbfa3"
+            ],
+            "tags": [0,2],
+            "prompt": "realistic photography of abandonned night club"
+        },
+        {
+            "name": "1967.jpg",
+            "palette": [
+                "#c4945c",
+                "#14233b",
+                "#e4c9a9",
+                "#9c775d",
+                "#4c3b42",
+                "#c4b299"
+            ],
+            "tags": [0,1],
+            "prompt": "realistic photography of a city with fog and vehicles"
+        },
+        {
+            "name": "1988.jpg",
+            "palette": [
+                "#ee4a81",
+                "#74092b",
+                "#a8d6ee",
+                "#647ab0",
+                "#2a3b56",
+                "#b7c4b4"
+            ],
+            "tags": [0,3],
+            "prompt": "surreal photography of a vehicle with colored three"
+        },
+        {
+            "name": "232.jpg",
+            "palette": [
+                "#e54a0a",
+                "#840604",
+                "#efd990",
+                "#932f06",
+                "#940705",
+                "#ccd4ac"
+            ],
+            "tags": [1,2],
+            "prompt": "colored nuclear explosion photography"
+        },
+        {
+            "name": "277.jpg",
+            "palette": [
+                "#3963c6",
+                "#04070e",
+                "#98aee2",
+                "#848280",
+                "#444441",
+                "#bcbcbc"
+            ],
+            "tags": [0,3],
+            "prompt": "1980 retro realistic black and white photography of women character"
+        },
+        {
+            "name": "289.jpg",
+            "palette": [
+                "#dfbc37",
+                "#592d0e",
+                "#f6c36b",
+                "#ae6d5e",
+                "#573237",
+                "#d2c0a6"
+            ],
+            "tags": [1],
+            "prompt": "1960 retro interior realistic photography with women character"
+        },
+        {
+            "name": "392.jpg",
+            "palette": [
+                "#bf4b2b",
+                "#ac641c",
+                "#f1d488",
+                "#a97d56",
+                "#43333a",
+                "#afcbd4"
+            ],
+            "tags": [0,1,2],
+            "prompt": "1980 retro vehicle realistic photography with women character"
+        },
+        {
+            "name": "449.jpg",
+            "palette": [
+                "#c43c34",
+                "#6f1008",
+                "#eead87",
+                "#a4725e",
+                "#745743",
+                "#ccb4a1"
+            ],
+            "tags": [0,3],
+            "prompt": "1980 retro realistic photography with women skating"
+        },
+        {
+            "name": "464.jpg",
+            "palette": [
+                "#808080",
+                "#424242",
+                "#bdbdbd",
+                "#777777",
+                "#444444",
+                "#bcbcbc"
+            ],
+            "tags": [1,2],
+            "prompt": "old retro blanc nad white interior realistic photography of a train station"
+        },
+        {
+            "name": "732.jpg",
+            "palette": [
+                "#e4231b",
+                "#6d240c",
+                "#f1937d",
+                "#b16d55",
+                "#583c34",
+                "#ccad90"
+            ],
+            "tags": [0,1],
+            "prompt": "surreal realistic photography of a women charcter with colored nails"
+        },
+        {
+            "name": "793.jpg",
+            "palette": [
+                "#da7734",
+                "#8b1904",
+                "#e8c398",
+                "#9a6f52",
+                "#4c2424",
+                "#d4e0cc"
+            ],
+            "tags": [0,3],
+            "prompt": "surreal painting of a child character with fire"
+        },
+        {
+            "name": "863.jpg",
+            "palette": [
+                "#bc424e",
+                "#4a040b",
+                "#eca691",
+                "#5aa2ac",
+                "#6f4a3c",
+                "#d1b4a5"
+            ],
+            "tags": [0,1,2,3],
+            "prompt": "surreal realistic photography with women characters in a pool"
+        },
+        {
+            "name": "954.jpg",
+            "palette": [
+                "#e8414a",
+                "#04062c",
+                "#f9db78",
+                "#a5766f",
+                "#385a61",
+                "#d9b6aa"
+            ],
+            "tags": [0],
+            "prompt": "surreal realistic painting of women characters skiing on water"
+        },
+        {
+            "name": "994.jpg",
+            "palette": [
+                "#a03a30",
+                "#1c110d",
+                "#f7ed83",
+               "#867663",
+                "#513b31",
+                "#c9b8a0"
+            ],
+            "tags": [0,2],
+            "prompt": "wonder women character painting retro book cover"
+        }
+    ],
+    "tags" : [
+        {
+            "id": 0,
+            "name": "foo"
+        },
+        {
+            "id": 1,
+            "name": "bar"
+        },
+        {
+            "id": 2,
+            "name": "lorem"
+        },
+        {
+            "id": 3,
+            "name": "ipsum"
+        }
+    ]
+}

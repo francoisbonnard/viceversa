@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  /* overflow: hidden; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  height: 20vh;
+  object-fit: contain;
+  object-position: center;
+  margin: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.center {
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.gallery {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.colorBox {
+    width: 20px;
+    height: 20px;
+   background-color: aqua;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.allBoxes {
+  position: relative;
+  margin-top: 50px;
+  left : -30px;
+}
+
+.buttonReset {
+  position: fixed;
+  height : 80px;
+  width : 80px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.markClassName, .trackClassName, .thumbClassName {
+  color : rgb(160, 185, 243);
+  border: 4px, solid, rgb(46, 107, 110);
+  background-color: rgb(37, 0, 46);
+}
+
+.vertical-slider {
+  background-color: blueviolet;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left : 30px;
+  margin-right: 30px;
+  font-size: large;
+  color:yellow;
+  height:200px;
+  width:10px;
+  border: 4px, solid, rgb(46, 107, 110);
+}
+
+.example-thumb {
+  border: 4px, solid, rgb(46, 107, 110);
+
+}
+
+.example-track {
+  color : blue;
+}
+
+.custom-color-ref {
+  width: 130px;
+  height: 20px;
+  color: rgb(144, 205, 38);
+  border-radius: 5px;
+  padding: 10px 25px;
+  position: relative;
+}
+
+.wheelcolor {
+  margin-top:50px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 3 */
+.btn-3 {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
 }
