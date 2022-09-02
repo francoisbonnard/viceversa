@@ -30,10 +30,11 @@ img {
    background-color: aqua;
   }
 .colorBox2 {
-    width: 20px;
-    height: 20px;
+  margin-left: -2px;
+    width: 22px;
+    height: 22px;
    background-color: aqua;
-   border: white 2px solid;
+   border: rgb(237, 225, 6) 2px solid;
   }
 
 .item {

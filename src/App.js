@@ -66,6 +66,7 @@ function App() {
           if (itemRGB1 - step <= JsonRGB1 && JsonRGB1 <= itemRGB1 + step) {
             if (itemRGB2 - step <= JsonRGB2 && JsonRGB2 <= itemRGB2 + step) {
               newList.push(i);
+              RefArrayPalette[i][j] = 1;
               console.log("add", i);
               break;
             }
@@ -74,14 +75,19 @@ function App() {
       }
     }
     UpdateListImages(newList);
-
+    
   }
-
-
-
+  
+  
+  
   function calculateNewlistFromSlider(e) {
-
+    
     UpdatePosSlider()
+    for (var i = 0; i < imagesNumber; i++) {
+      for (var j = 0; j < 6; j++) {
+        RefArrayPalette[i][j]=0
+      }
+    }
     const step = e[1];
     const item = window["bufferPalette"];
     const itemRGB0 = window["bufferItem0"];
@@ -100,6 +106,7 @@ function App() {
           if (itemRGB1 - step <= JsonRGB1 && JsonRGB1 <= itemRGB1 + step) {
             if (itemRGB2 - step <= JsonRGB2 && JsonRGB2 <= itemRGB2 + step) {
               newList.push(i);
+              RefArrayPalette[i][j] = 1;
               break;
             }
           }
@@ -158,17 +165,19 @@ function App() {
     UpdateListImages(newList);
   }
 
+
   function resetList(e) {
     const resetListArray = [];
     for (var i = 0; i < imagesNumber; i++) {
+      resetListArray.push(i);
       for (var j = 0; j < 6; j++) {
         RefArrayPalette[i][j] = 0
       }
     }
-
-
     UpdateListImages(resetListArray);
   }
+
+
 
   return (
     <div>
