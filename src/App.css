@@ -29,6 +29,12 @@ img {
     height: 20px;
    background-color: aqua;
   }
+.colorBox2 {
+    width: 20px;
+    height: 20px;
+   background-color: aqua;
+   border: white 2px solid;
+  }
 
 .item {
   display: flex;
