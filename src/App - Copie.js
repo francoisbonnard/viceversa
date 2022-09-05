@@ -26,6 +26,7 @@ function App() {
   const sliderInit = [0, 11, 100];
   const [posSlider, UpdatePosSlider] = useState(sliderInit);
   const [showElement, setShowElement] = useState(false);
+  const [showIndex, setShowIndex] = useState(null);
 
   //________________________________________
 
@@ -205,8 +206,13 @@ function App() {
         {images.map((index, i) => {
           return (
             <div className="itemVert" >
-              <div className="item" key={i}>
-                <img src={`./images/${myjson.images[index].name}`} alt="" />
+              <div className="item" key={i}
+
+              >
+                <img src={`./images/${myjson.images[index].name}`} alt=""
+                  onMouseEnter={() => setShowIndex(i)}
+                  onMouseLeave={() => setShowIndex(null)}
+                />
                 <div className="allBoxes">
                   {myjson.images[index].palette.map((index2, j) => {
                     const b = myjson.images[index].palette[j]
@@ -226,7 +232,9 @@ function App() {
 
                 </div>
               </div>
-              <div className="prompt" >{myjson.images[index].prompt}</div>
+              <div className="prompt"
+              style={{ visibility: showIndex === i ? 'visible' : 'hidden' }}
+              >{myjson.images[index].prompt}</div>
             </div>
           );
         })}

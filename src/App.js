@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 import myjson from "./refs.json";
 import PickColor from "./PickColor";
@@ -10,30 +10,31 @@ const imagesNumber = Object.keys(myjson.images).length;
 // calcul des listes de référence
 const RefArray = [];
 const RefArrayPalette = [];
-// const 
+// const
 for (var i = 0; i < imagesNumber; i++) {
   RefArray.push(i);
-  RefArrayPalette.push([])
+  RefArrayPalette.push([]);
   for (var j = 0; j < 6; j++) {
     RefArrayPalette[i].push(0);
   }
 }
 
 function App() {
-
   const [images, UpdateListImages] = useState(RefArray);
   const [currentColor, UpdateCurrentColor] = useState("#fff");
   const sliderInit = [0, 11, 100];
   const [posSlider, UpdatePosSlider] = useState(sliderInit);
   const [showElement, setShowElement] = useState(false);
   const [showIndex, setShowIndex] = useState(null);
+  const [openPopupAdd, setOpenPopuAdd] = useState(false);
+  const inputFile = useRef(null);
 
   //________________________________________
 
   function calculateNewlistFromColorPicker(color) {
     const step = 50;
     const item = color;
-    UpdatePosSlider([0, 50, 100])
+    UpdatePosSlider([0, 50, 100]);
     // convertit la valeur hsb en R G B
 
     const itemRGB0 = parseInt(color.slice(1, 3), 16);
@@ -68,17 +69,13 @@ function App() {
       }
     }
     UpdateListImages(newList);
-
   }
 
-
-
   function calculateNewlistFromSlider(e) {
-
-    UpdatePosSlider()
+    UpdatePosSlider();
     for (var i = 0; i < imagesNumber; i++) {
       for (var j = 0; j < 6; j++) {
-        RefArrayPalette[i][j] = 0
+        RefArrayPalette[i][j] = 0;
       }
     }
     const step = e[1];
@@ -110,16 +107,15 @@ function App() {
   }
 
   function calculateNewList(e) {
-
     for (var i = 0; i < imagesNumber; i++) {
       for (var j = 0; j < 6; j++) {
-        RefArrayPalette[i][j] = 0
+        RefArrayPalette[i][j] = 0;
       }
     }
 
     const step = 12;
     const item = e.target.style.backgroundColor;
-    UpdatePosSlider([0, 12, 100])
+    UpdatePosSlider([0, 12, 100]);
     // convertit la valeur RGB en R G B
     const itemSplit = item.slice(0, -1).substring(4).split(",");
 
@@ -157,67 +153,85 @@ function App() {
     UpdateListImages(newList);
   }
 
-
   function resetList(e) {
     const resetListArray = [];
     for (var i = 0; i < imagesNumber; i++) {
       resetListArray.push(i);
       for (var j = 0; j < 6; j++) {
-        RefArrayPalette[i][j] = 0
+        RefArrayPalette[i][j] = 0;
       }
     }
     UpdateListImages(resetListArray);
   }
 
+  function addImg() {}
 
+  //_________________________________RETURN_______________________
 
   return (
     <div>
+      {openPopupAdd && (
+        <div
+          className="popupAdd"
+          // id={idMessage}
+          tabIndex="-1"
+          role="dialog"
+        >
+          content
+        </div>
+      )}
+
       <div className="gallery">
-        <div className="wheelcolor">
-          <WheelColor
-            onChange={(value) => calculateNewlistFromColorPicker(value)}
-            currentColor={currentColor}
-          />
+        <div className="interfaceUI">
+          <div className="interface-Niv1">
+            <div className="wheelcolor">
+              <WheelColor
+                onChange={(value) => calculateNewlistFromColorPicker(value)}
+                currentColor={currentColor}
+              />
+            </div>
+            <ReactSlider
+              className="vertical-slider"
+              markClassName="markClassName"
+              trackClassName="trackClassName"
+              thumbClassName="thumbClassName"
+              defaultValue={[0, 13, 100]}
+              value={posSlider}
+              renderThumb={(props, state) => (
+                <div {...props}>{state.valueNow}</div>
+              )}
+              orientation="vertical"
+              invert
+              minDistance={1}
+              onAfterChange={calculateNewlistFromSlider}
+            />
+          </div>
+          <div className="interface-Niv2">
+            <button
+              class="custom-btn btn-3"
+              onClick={() => setOpenPopuAdd(!openPopupAdd)}
+            >
+              <span>Add img</span>
+            </button>
+            <button class="custom-btn btn-3" onClick={resetList}>
+              <span>Reset</span>
+            </button>
+          </div>
         </div>
-        {/* <PickColor />  */}
-        <div className="buttonReset">
-          <button class="custom-btn btn-3" onClick={resetList}>
-            <span>Reset</span>
-          </button>
-          <div className="custom-color-ref"></div>
-
-        </div>
-
-        <ReactSlider
-          className="vertical-slider"
-          markClassName="markClassName"
-          trackClassName="trackClassName"
-          thumbClassName="thumbClassName"
-          defaultValue={[0, 13, 100]}
-          value={posSlider}
-          renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
-          orientation="vertical"
-          invert
-          minDistance={1}
-          onAfterChange={calculateNewlistFromSlider}
-        />
 
         {images.map((index, i) => {
           return (
-            <div className="itemVert" >
-              <div className="item" key={i}
-
-              >
-                <img src={`./images/${myjson.images[index].name}`} alt=""
-                  // onMouseEnter={() => setShowElement(true)}
-                  //  onMouseLeave={() => setShowElement(false)}
+            <div className="itemVert">
+              <div className="item" key={i}>
+                <img
+                  src={`./images/${myjson.images[index].name}`}
+                  alt=""
                   onMouseEnter={() => setShowIndex(i)}
                   onMouseLeave={() => setShowIndex(null)}
                 />
                 <div className="allBoxes">
                   {myjson.images[index].palette.map((index2, j) => {
-                    const b = myjson.images[index].palette[j]
+                    const b = myjson.images[index].palette[j];
                     let classNameDiv = "colorBox";
                     if (RefArrayPalette[index][j] === 1) {
                       classNameDiv = "colorBox2";
@@ -229,17 +243,16 @@ function App() {
                         style={{ backgroundColor: index2 }}
                         onClick={calculateNewList}
                       />
-                    )
+                    );
                   }, (i, index))}
-
                 </div>
               </div>
-              <div className="prompt"
-               id={i}
-                key={i}
-                // style={{ visibility: showElement ? 'visible' : 'hidden' }}
-              style={{ visibility: showIndex === i ? 'visible' : 'hidden' }}
-              >{myjson.images[index].prompt}</div>
+              <div
+                className="prompt"
+                style={{ visibility: showIndex === i ? "visible" : "hidden" }}
+              >
+                {myjson.images[index].prompt}
+              </div>
             </div>
           );
         })}
